@@ -1,1017 +1,147 @@
+
 <!DOCTYPE html>
-<html lang="tr">
-  <head>
-    <title>1 Genç 1 Gelecek</title>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--bootstrap css-->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!--custom css-->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!--flex slider css-->
-    <link href="css/flexslider.css" rel="stylesheet">
-    <!--google web fonts css-->       
-    <!-- font awesome css-->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!--animated css-->
-    <link href="css/animate.css" rel="stylesheet">
-    <!--owl carousel css-->
-    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
-    <!--Revolution slider css-->
-    <link href="rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
-    <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <title>1 Genç 1 Gelecek</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="js/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <meta charset="utf-8" /> 
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: url(4.jpg);
-        background-size: cover;
-      }
+</head>
 
-      h1 {
-        text-align: center;
-        font-family: Tahoma, Arial, sans-serif;
-        color: orange;
-        margin: 100px 0;
-      }
+<body>
 
-      .box {
-        width: 20%;
-        margin: 0 auto;
-        background: rgba(255,255,255,0.2);
-        padding: 35px;
-        border: 2px solid #fff;
-        border-radius: 20px/50px;
-        background-clip: padding-box;
-        text-align: center;
-      }
-
-      .button {
-        font-size: 1em;
-        padding: 10px;
-        color: #9892EB;
-        border: 2px solid orange;
-        border-radius: 20px/50px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: all 0.3s ease-out;
-      }
-      .button:hover {
-        background: #DFE3DD;
-      }
-
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        transition: opacity 500ms;
-        visibility: hidden;
-        opacity: 0;
-      }
-      .overlay:target {
-        visibility: visible;
-        opacity: 1;
-      }
-      
-      @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-    body {
-      width: 100%;
-      background: url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grid.png) repeat #fefefe;
-    }
-
-    
-    .modalbg {
-      position: fixed;
-      font-family: Arial, Helvetica, sans-serif;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0, 0, 0, 0);
-      z-index: 99999;
-      -moz-transition: all 0.5s ease-out;
-      -webkit-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out;
-      -webkit-transition-delay: 0.2s;
-      -moz-transition-delay: 0.2s;
-      -o-transition-delay: 0.2s;
-      -transition-delay: 0.2s;
-      display: block;
-      pointer-events: none;
-    }
-    .modalbg .dialog {
-      width: 400px;
-      position: relative;
-      top: -1000px;
-      margin: 10% auto;
-      padding: 5px 20px 13px 20px;
-      -moz-border-radius: 10px;
-      -webkit-border-radius: 10px;
-      border-radius: 10px;
-      background: #ffffff;
-      background: -moz-linear-gradient(#ffffff, #cccccc);
-      background: -webkit-linear-gradient(#ffffff, #cccccc);
-      background: -o-linear-gradient(#ffffff, #cccccc);
-      box-shadow: 0 0 10px #000000;
-      -moz-box-shadow: 0 0 10px #000000;
-      -webkit-box-shadow: 0 0 10px #000000;
-    }
-    .modalbg .dialog .ie7 {
-      filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
-    }
-    .modalbg:target {
-      display: block;
-      pointer-events: auto;
-      background: rgba(4, 10, 30, 0.8);
-      -moz-transition: all 0.3s ease-out;
-      -webkit-transition: all 0.3s ease-out;
-      -o-transition: all 0.3s ease-out;
-      transition: all 0.3s ease-out;
-    }
-    .modalbg:target .dialog {
-      top: -90px;
-      -moz-transition: all 0.5s ease-out;
-      -webkit-transition: all 0.5s ease-out;
-      -o-transition: all 0.5s ease-out;
-      transition: all 0.5s ease-out;
-      -webkit-transition-delay: 0.2s;
-      -moz-transition-delay: 0.2s;
-      -o-transition-delay: 0.2s;
-      -transition-delay: 0.2s;
-    }
-    .close {
-      background: #606061;
-      color: #FFFFFF;
-      line-height: 25px;
-      position: absolute;
-      right: -12px;
-      text-align: center;
-      top: -10px;
-      width: 24px;
-      text-decoration: none;
-      font-weight: bold;
-      -webkit-border-radius: 12px;
-      -moz-border-radius: 12px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px #000000;
-      -moz-box-shadow: 0 0 10px #000000;
-      -webkit-box-shadow: 0 0 10px #000000;
-      -moz-transition: all 0.2s ease-out;
-      -webkit-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out;
-      -webkit-transition-delay: 0.2s;
-      -moz-transition-delay: 0.2s;
-      -o-transition-delay: 0.2s;
-      -transition-delay: 0.2s;
-    }
-    .close .ie7 {
-      filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=3);
-    }
-    .close:hover {
-      background: #00d9ff;
-      -moz-transition: all 0.2s ease-out;
-      -webkit-transition: all 0.2s ease-out;
-      -o-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out;
-    }
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    </style>
-  </head>
-
-
-  <body data-spy="scroll" data-target="#navigation" data-offset="80">
-    <div class="fullwidthbanner" id="home">
-      <div class="ken-burns-banner">
-        <ul>    <!-- SLIDE  -->
-          <li data-transition="fade" data-masterspeed="1500" data-delay="3500"  data-saveperformance="off" data-title="Başla.">
-            <!-- MAIN IMAGE -->
-            <img src="img/main_image.jpg"  alt="kenburns1"  data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="130">
-            <!-- LAYERS -->
-
-            <div class="caption customin customout tp-resizeme Ken-burns-heading font-alt" 
-                 data-x="center" 
-                 data-hoffset="0" 
-                 data-y="center" 
-                 data-voffset="0" 
-                 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
-                 data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                 data-speed="800" 
-                 data-start="1300" 
-                 data-startslide="1" 
-
-                 data-easing="Power4.easeOut" 
-                 data-endspeed="500" 
-                 data-endeasing="Power4.easeIn">
-
-                GELECEĞİ YAKINDAN GÖR   
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#anasayfa.html">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	1 Genç 1 Gelecek
+                </a>
             </div>
-            <div class="caption customin customout tp-resizeme" 
-              data-x="center" 
-              data-hoffset="0" 
-              data-y="center" 
-              data-voffset="120" 
-              data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-              data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-              data-speed="800" 
-              data-start="1500" 
-              data-startslide="1" 
+            <!-- Navbar links -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-              data-easing="Power4.easeOut" 
-              data-endspeed="500" 
-              data-endeasing="Power4.easeIn">
-            <div class="rev-buttons scrollto">
-              <a href="#about" class="btn btn-theme-color btn-lg">
-                  BİZ KİMİZ
-              </a>                              
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Duyurular
+                    <small>Başvurular</small>
+                </h1>
             </div>
-          </div>
-        </li>
-      </ul>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/1" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/2" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/3" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/4" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+        </div>
+
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/5" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://lorempixel.com/700/400/nature/6" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Title</a>
+                </h3>
+                <p>Upon yielding, kind sea subdue very seed sixth them lesser one lesser there earth days were multiply so sixth gathering fifth that man fowl made.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
     </div>
-  </div><!--full width banner-->
+    <!-- /.container -->
+	
 
 
-  <section id="navigation">
-    <div class="navbar navbar-default navbar-static-top sticky" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="demo-default.html"><b>1GENÇ 1GELECEK</b></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right scrollto">
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#about">BİZ KİMİZ</a></li>
-            <li><a href="#services">DEĞERLERİMİZ</a></li>
-            <li><a href="#akildostum">ProjeLERİMİZ</a></li>
-            <li><a href="#bizitani">BİZİ TANI</a></li>
-            <li><a href="#contact">İLETİŞİM</a></li>
-            <li><a href="http://blog.1genc1gelecek.com"> | BLOG (Yakında) </a></li>                       
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div><!--/.container -->
-    </div>
-  </section><!--navigation section end here-->
+	
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
 
-<br><br><br>
-<center><h4>Bizi Takip Edin</h4></center>
-  <section>
-    <center>
-      <a href= "https://www.facebook.com/1genc1gelecek"><img src= "img/facebook.png" alt="facebook_icon" target="_blank" style="width:64px;height:64px;"></img></a>
-      <a href= "https://twitter.com/1Genc1Gelecek"><img src= "img/twitter.png" alt="twitter_icon" target="_blank" style="width:64px;height:64px;"></img></a>
-      <a href= "https://www.linkedin.com/company/1-gen%C3%A7-1-gelecek?trk=top_nav_home"><img src= "img/linkedin.png" alt="linkedin_icon" target="_blank" style="width:64px;height:64px;"></img></a>
-    </center>
-  </section>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
+</body>
 
-  <section id="about" class="padding-80">
-    <!--about page content-->
-    <div class="about-section">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h4 class="small section-title"><span>Biz Kimiz?</span></h4>
-          <h2 class="large section-title">Ne yapıyoruz?</h2>
-        </div><!--section heading-->             
-      </div><!--container-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="about-box wow animated fadeInDown" data-wow-duration="0.3s">
-              <div class="about-box-icon">
-                <i class="fa fa-lightbulb-o"></i>
-                </div>
-                <div class="about-box-text">
-                  <h4>MİSYONUMUZ </h4>
-                  <p>
-                    Türkiye’de bulunan liselerde eğitim görmekte olan öğrencilerin başarmak istedikleri hedefleri gerçekleştirmeleri, izleyebilecekleri yolları keşfetmeleri için onları; üniversitede okuyan, başarılı, lisede öğrenim gören öğrencilerin yollarından kısa süre önce geçmiş, üniversite deneyimi kazanmış öğrenci arkadaşlarımız ile buluşturarak ortak projeler yapıyoruz. Amacımız düşünen, sorgulayan, kendi kendini geliştirmeyi amaç edinmiş, kültürel anlamda kendini zenginleştiren, çevresine duyarlı insanlar olmalarına katkı sağlamaktır. Sorumluluk alabilen, üretken, çalışkan ve hayalleri olan öğrencileri bir araya getiriyoruz. Sınavlardan dolayı öğrencilerin üzerinde yer alan baskıdan kurtulmalarını, üniversite ve üniversite sonrası ile ilgili çevreden duyulan kalıpları yıkmalarını, kendi hayatlarını kendi istek ve arzuları doğrultusunda şekillendirmelerini sağlamak en temel amaçlarımızdandır. Programımıza katılan arkadaşlarımızın eğitim gördükleri lisede proaktif olmalarını, çevrelerine rol model olmalarını sonuç olarak kendi başına işler ortaya koyabilen bireyler olmalarını istiyoruz.
-
-                    Yaptığımız tüm çalışmaları gönüllü olarak gerçekleştirmekteyiz. Çalışan arkadaşlarımız maddi veya manevi bir çıkar beklentisi içerisinde olmadan, topluma faydası olduğunu düşündükleri bu projede gönüllü çalışmanın esasına inanmaktadırlar.  
-
-                  </p>
-                </div>
-              </div><!--about us box end-->
-            </div>
-          </div><!--about services row end--> 
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <div class="about-box wow animated fadeInDown" data-wow-delay="0.6s">
-                <div class="about-box-icon">
-                  <i class="fa fa-hand-o-up"></i>
-                </div>
-                <div class="about-box-text">
-                  <h4> VİZYONUMUZ </h4>
-                  <p>
-                    Amacımız Türkiye’de birçok gencin üretken, çalışkan, kendisini geliştiren, ülkesi için sorumluluk alabilen, çevresine duyarlı bir şekilde yetişmesine katkı sağlamaktır. Bizlerin üstlendiği bu projeyi yetiştirdiğimiz gençlerin devralması, Türkiye’de üreten bir gençliğin oluşması, sıkı bir yapı ile devam edecek olan projemizin yine bizim programımıza katılmış olan genç arkadaşlar tarafından sürdürülebilir duruma gelmesi birincil hedefimizdir. 
-                  </p>
-                </div>
-              </div><!--about us box end-->
-            </div>
-          </div><!--about services row end-->     
-        </div>
-      </div>
-
-      <div class="purchase-now parallax" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8">
-              <h1 class="wow animated fadeInLeft" data-wow-delay="0.3s">MUTLU SON, HİKAYEYİ NEREDE BİTİRDİĞİNLE İLGİLİDİR.</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--page about content end here-->            
-    </section>
-    <!--about section end here-->
-    <section id="services" class="padding-80">
-      <div class="services-section-1">
-        <div class="container">
-          <div class="section-heading text-center">
-            <h4 class="small section-title"><span></span></h4>
-            <h2 class="large section-title">DEĞERLERİMİZ</h2>
-          </div><!--section heading-->             
-        </div><!--container-->
-        <div class="col-md-12 wow animated fadeInLeft" data-wow-delay="0.3s">
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>Uygulayarak öğrenmenin en etkili öğrenme yöntemlerinden biri olduğuna inanıyoruz. </h3>
-                <p>
-                  Akılda kalıcı bir öğrenme modeli için öğretmenin değil öğrencinin düşündüğü, tartıştığı ve uyguladığı bir eğitim modelini benimsiyoruz.
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->
-        </div>
-        <div class="col-md-12 wow animated fadeInLeft" data-wow-delay="0.3s">
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>Konuşmanın değil aksiyona geçmenin gerekliliğini savunuyoruz. </h3>
-                <p>
-                  Gençlerin üretkenliğine güveniyor, proje üretmenin önemli olduğunu düşünüyoruz.
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>İnsanların birbiri ile değil kendisi ile rekabet etmesinin doğru olduğuna inanıyoruz. </h3>
-                <p>
-                  İnsanın içindeki en yüksek potensiyele ulaşabilmesi için kendisi ile yarışması gerektiğini düşünüyoruz. 
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>Çevremize karşı duyarlı, topluma karşı sorumluluk sahibi bireyler olmanın önemine inanıyoruz. </h3>
-                <p>
-                  İyi bir şekilde yetişen gençlerimizin çevreye ve topluma karşı sorumlu olduğunu düşünüyor ve bu konuda çalışmalar yapmalarını bekliyoruz. 
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>İnsanların kendilerini her açıdan geliştirmesinin gerekliliğine inanıyoruz.</h3>
-                <p>
-                  Hızlı bir şekilde değişen dünyanın gereği olarak, insanların çok yönlü olmaları gerektiğini , bunun insanın yaratıcılığını geliştirdiğini düşünüyoruz 
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->
-          <div class="row margin-btm-20">
-            <div class="col-md-1">
-              <div class="services-icon">
-                <i class="fa fa-dot-circle-o"></i>
-              </div> 
-            </div>
-            <div class="col-md-11">
-              <div class="services-info">
-                <h3>Deneyim gücüne inanıyoruz.</h3>
-                <p>
-                  İnsanların iyi ya da kötü her deneyimden çıkarılacak bir sonuç olduğunu biliyor ve deneyimlerimizi aktarmanın önemli olduğunu düşünüyoruz.  
-                </p>
-              </div>
-            </div>
-          </div><!--.services row end-->          
-        </div>
-      </div><!--services section 1 end-->
-    </section>
-    <!--section services end here-->
-    <!--our work section start here-->
-    <section id="pricing" class="padding-80">
-      <div class="pricing-section-1">
-        <div class="container">
-          <div class="section-heading text-center">
-            <h4 id= "projelerimiz" class="large section-title">Projelerimiz</h2>
-          </div><!--section heading-->
-        </div><!--section heading-->
-        <div class="container">
-          <div class="row">
-
-         <div class="col-md-2">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-               
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-
-            <div class="col-md-4">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-                <div class="pricing-wrapper-inner">
-                  <h1 id="akildostum">Akıl Dostum</h1>
-                  <div class="price-desc">
-                    <p>
-                      Akıl Dostum projesi üniversite öğrencilerinin lisede eğitim görmekte arkadaşlarımıza akran koçluğu hizmeti verdiği çalışmamızdır. Bu anlamda şu an başarılı üniversitelerde okumakta olan 10 arkadaşımız çeşitli liselerde okumakta olan öğrencilere “Akıl Dostluğu” yapmaktadır. Projenin amacı lise öğrencilerinin lise eğitimleri sırasında kendilerine yol gösterebilecek kişiler ile buluşmalarını sağlayıp özellikle sınav senesinde daha sağlıklı bir süreç izleyebilmelerini sağlamaktır. Bu amaçla “Akıl Dostu” olan arkadaşlarımız çeşitli eğitimlerden geçmektedir.
-                    </p>
-                  </div>
-                </div>
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-            <div class="col-md-4">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-                <div class="pricing-wrapper-inner">
-                  <h1>SS 101</h1>
-                  <div class="price-desc">
-                    <p>
-                      Sosyal Sorumluluk 101 projesi lisedeki öğrencilerle toplumsal sorunları araştırarak tespit etmek ve tartışmak, bulunan sorunlara olası çözüm önerileri getirmek ve bu konularda aksiyon planı oluşturmak amacı ile lisedeki arkadaşlarımızın sosyal yardım projelerini oluşturmalarını ve bu projelerde yer almalarını destekleyen programımızdır. 
-                    </p>
-                  </div>
-                </div>
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-
-          </div> <!-- end of row -->
-
-          <div class="row">
-            <div class="col-md-4">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-                <div class="pricing-wrapper-inner">
-                  <h1>KK</h1>
-                  <div class="price-desc">
-                    <p>
-                      KodKamp lise öğrencilerinin kod öğrenmelerini eğlenceli hale getirmek ve programlama alanında kendilerini geliştirmelerini sağlamak amacıyla oluşturulmuş bir programdır. Uygulamalı olarak kod yazmayı öğrenen öğrenciler program sonunda kendi projelerini yaparak kod dünyasına girmiş bulunurlar. 
-                    </p>
-                  </div>
-                </div>
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-            <div class="col-md-4">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-                <div class="pricing-wrapper-inner">
-                  <h1>Borsaya Giriş</h1>
-                  <div class="price-desc">
-                    <p>
-                      Borsayı tanımak için iş hayatını beklemek çok anlamsız. Gençlerin borsayı takip edebilmeleri, borsanın nasıl işlediğini öğrenmeleri için tasarlanmış olan program, öğrencileri çeşitli borsa yarışmalarına da hazırlayarak tecrübe sahibi olmalarını sağlar. Borsa tutkunları gençlerin yetişmesine temel oluşturacak bu program öğrencilerin vizyonuna da büyük katkı sağlayacak.
-                    </p>
-                  </div>
-                </div>
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-            <div class="col-md-4">
-              <div class="pricing-wrapper wow animated fadeInDown" data-wow-delay=".3s">
-                <div class="pricing-wrapper-inner">
-                  <h1>Sosyal Düşün</h1>
-                  <div class="price-desc">
-                    <p>
-                      Sosyal düşün programı, sosyoloji, felsefe, psikoloji gibi alanlarda öğrencilerin çeşitli makaleler ve kitaplar üzerinden gerçekleştirdiği  tartışma gruplarıdır. Her tartışmanın sonunda öğrenciler yaptıkları çalışmalarla ilgili bir yazı yazarak bunu blogumuzda paylaşır. 
-                    </p>
-                  </div>
-                </div>
-              </div><!--pricing wrapper-->
-            </div><!--price col-->
-          </div>                                                 
-        </div>
-      </div><!--price section one end here-->
-    </section> <!--pricing table section end here-->
-    <section id="work" class="padding-20">
-      <div class="testi parallax " data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <div id="testi-carousel" class="owl-carousel">
-                <div>
-                  <img src="img/t-3.jpg" alt="">
-                  <h4>
-                    İmkansız olduğunu bilmiyorlardı, bu yüzden başardılar.
-                  </h4>
-                  <p>MARK TWAIN</p>
-                </div><!--testimonials item like paragraph-->
-                <div>
-                  <img src="img/t-2.jpg" alt="">
-                  <h4>
-                    Aslında herkes dahidir.Ama siz kalkıp bir balığı, ağaca tırmanma yeteneğine göre yargılarsanız, tüm hayatını aptal olduğuna inanarak geçirir.
-                  </h4>
-                  <p>ALBERT EINSTEIN</p>
-                </div>
-                <div>
-                  <img src="img/t-1.jpg" alt="">
-                  <h4>
-                    Dün ile bugün arasında bir kavga çıkarsa, yarın kaybeder.
-                  </h4>
-                  <p>WINSTON CHURCHILL</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="work-section-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center margin-btm-40">
-            <div class="section-heading text-center">
-              <h2 id = "bizitani" class="large section-title">BİZİ TANI</h2>
-            </div>
-          </div>                                            
-        </div><!--.row-->
-
-
-        <!-- POPUP -->
-        <div id="popup1" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>MURAT YİĞEN</h2>
-            <p>Lise hayatını Bahçeşehir Koleji’nde tamamlayan Murat Yiğen, üniversite eğitimine Boğaziçi Üniversitesi Makina Mühendisliği bölümünde devam etmiştir. Üniversite hayatı boyunca Vaillant, Pfizer ve Borusan EnBW Enerji gibi ulusal ve uluslararası firmalarda stajlarını tamamlamıştır.Boğaziçi Üniversitesi’nde endüstri mühendisliği kulübünde aktif olarak çalışmış, uluslararası öğrenci platformunda çeşitli pozisyonlarda çalışmalar gerçekleştirmiştir. 2013 senesinde TOÇEV de gönüllü öğretmen olarak görev yapmıştır. Haziran 2015 itibari ile Yenibirlider Derneği’nde proje yöneticisi olarak çalışmaya başlayan Murat, eğitmenlik, psikoloji, sosyoloji ve İskandinav kültürüne ilgi duymaktadır.  </p>
-          </div>
-        </div>
-
-        <div id="popup2" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>CEM ÖZTÜRK</h2>
-            <p>Liseyi Şehremini Anadolu Lisesi’nde tamamlayan Cem Öztürk, Boğaziçi Üniversitesi Yönetim Bilişim Sistemleri bölümündeki eğitimini ise 2015 yılında tamamlamıştır. Üniversite öncesinden beri ilgi duyduğu finansal piyasalara ve yatırım konusuna olan büyük merakı kendisine çeşitli yatırım yarışmalarında dereceler getirmiştir. 2014 baharında 6 ay süreyle Singapur’da NUS’a giderek Uzakdoğu kültürünü tanımak konusunda ilk girişini yapmıştır. Küçük ekiplerle hızlı şekilde çalışmayı seven Öztürk’ün en büyük hobisi daha önce hiç fikri olmadığı konular hakkında okumak ve derinlemesine araştırmada bulunmaktır.</p>
-          </div>
-        </div>
-
-        <div id="popup3" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>ZAFER ÇAVDAR</h2>
-            <p>Bahçeşehir Fen ve Teknoloji Lisesi mezunu olan Zafer, Koç Üniversitesi Bilgisayar Mühendisliği 2.sınıf öğrencisidir. 5 yılı aşkın süredir robotik, yapay zekâ, mikro işlemci programlama, Radio Control, insansız hava araçları, sunucu tasarımı gibi konularla ilgilenmekte; FRC, NASA SpaceApps gibi çeşitli ulusal ve uluslararası yarışmalara farklı takımlarla birlikte katılmaktadır. Aynı zamanda Koç Üniversitesi Robotik Kulübü Başkan yardımcılığını yürüten Zafer, Türkiye’deki girişimcilik ekosistemiyle yakından ilgilenmekte ve Türkiye’nin en büyük sosyal medya start-up’larından olan Scorp’un ilk geliştiricilerinden biridir.</p>
-          </div>
-        </div>
-
-        <div id="popup4" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>CENGİZ KAAN AKÖZ</h2>
-            <p>Cengiz  Kaan Aköz Lise eğitimini İstanbul Amerikan Robert Koleji'nde tamamlamıştır. 2012’den bu yana Boğaziçi Üniversitesi Endüstri Mühendisliği Bölümü öğrencisidir. 2013 senesinde Boğaziçi Üniversitesi Yöneylem Araştırma  Kulübünde aktif olarak yer almış ve PUSULA’13 ve OKUL’13  etkinliklerinin sunuculuğunu yapmıştır. Boş zamanlarında seyahat etmekten ve sinemaya gitmekten hoşlanana Kaan’ın favori şehri Amsterdam ve favori sinema filmi Interstellar’dır.</p>
-          </div>
-        </div>
-
-        <div id="popup5" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>AYSEL KAPSIZ</h2>
-            <p>Şuan Boğaziçi Üniversitesi Sosyoloji Bölümünde okuyan Aysel, aynı zamanda Ekonomi bölümüyle çap(çift anadal programı) yapmaktadır. Lise öğrenimini Robert Kolejinde tamamlamıştır. Lisede sosyal sorumluluk projeleri çerçevesinde çeşitli illerde düzenlenen eğitim festivallerinde eğitmen ve proje lideriliği görevlerini üstlenmiştir. Üniversitede ise Boğaziçi Üniversitesi Yöneylem Araştırma Kulübünde 2 yıl görev almıştır. Reklam sektöründe staj yapan Aysel, öğrenim hayatı boyunca tiyatroya oldukça ilgi duyan bir öğrenci olmuştur. </p>
-          </div>
-        </div>
-
-        <div id="popup6" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>BERKAN LAFCI</h2>
-            <p>Tekirdağ Fen Lisesi’nden mezun olduktan sonra Boğaziçi Üniversitesi’ne giren Berkan Lafcı, şu anda Elektrik Elektronik mühendisliğinde 4. Sınıf öğrencisidir. Kontrol sistemleri üzerine çalışmalar yapan Berkan’ın ileride çalışmayı planladığı alanlar robotlar ve biomedikaldir. Erasmusa Almanya’ya gitmiştir ve Almancasını da günden güne gelistiren Berkan, ileride Alman şirketlerinden birinde çalışmak istemektedir. Boğaziçi Üniversitesi Yöneylem Araştırma Kulübü üyesidir. Uçaklar hakkında saatlerce süren konuşmalara giren Berkan, eskiden yamaç paraşütü yapmaktaydı. Bir diğer hobisi de basket oynamak ve basket maçları seyretmektir. </p>
-          </div>
-        </div>
-
-        <div id="popup7" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>RANA DEMİR</h2>
-            <p>Boğaziçi Üniversitesi İnşaat Mühendisliği dördüncü sınıf öğrencisi olan Rana, ortaöğretim ve liseyi Adapazarı ENKA Okulları’nda tamamlamıştır. Lisede başladığı toplum hizmeti çalışmalarına üniversitede öğrenci kulüplerinde aktif roller oynayarak devam etmiştir.  Değişim programıyla Kanada’da bir dönem öğrenim görmüştür. Çeşitli firmalarda yurt içi ve yurt dışı stajları yapmıştır. Edebiyata ilgi duyan Rana profesyonel düzeyde olmasa da yüzme ve yelken sporlarıyla ilgilenmektedir.</p>
-          </div>
-        </div>
-
-        <div id="popup8" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>MELİS BORA</h2>
-            <p>Liseyi Bursa Şükrü Şankaya Anadolu Lisesinde tamamlayan Melis BORA Boğaziçi Üniversitesi Psikolojik Danışmanlık ve Rehberlik bölümü 4.sınıf öğrencisidir. Üniversite hayatı boyunca sırasıyla Homeopati istanbul’da asistan, Inlight Organik Kozmetik’de ürün müdürü yardımcısı, Coca Cola İçecek’de insan kaynakları stajyer ve son olarak Pfizer Eğitim Gelişim Departmanı’nda online eğitimlerden sorumlu olarak çalışmıştır. Çalışma hayatının yanı sıra Boğaziçi Üniversitesi Çevre Klübü yönetminde yer almış, Boğaziçi Üniversitesi Bisiklet Topluluğu ile çeşitli sosyal sorumluluk projelerinde görev yapmıştır. İki köpeği ile yaşayan Melis’in hobileri arasında gitar çalmak, fotoğraf çekmek, yemek yapmak ve kayak yapmak bulunur.İş ve okuldan arta kalan zamanlarını kitap okumakla değerlendiren Melis’in en sevdiği kitap “Kürk Mantolu Madonna”dır.</p>
-          </div>
-        </div>
-
-        <div id="popup9" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>RENGİM ÇETİNGÖZ</h2>
-            <p>Rengim Çetingöz Boğaziçi Üniversitesi Kimya Mühendisliği 3.sınıf öğrencisidir. Rengim İzmir Amerikan Koleji mezunudur. On seneyi aşkın süredir basketbol oynamaktadır ve aktif şekilde devam etmektedir. Okul kulüplerinde de etkin şekilde yer almaya özen gösteren Rengim, Boğaziçi Üniversitesi Spor Kurulu’nda Yönetim Kurulu Üyesi olarak görev almaktadır. </p>
-          </div>
-        </div>
-
-         <div id="popup10" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>EREN LİMON</h2>
-            <p>Bahçeşehir Fen ve Teknoloji Lisesi mezunu olan Eren, Koç Üniversitesi Bilgisayar Mühendisliği 1.sınıf öğrencisidir. Lise yıllarında katıldığı FIRST Lego League, FIRST Robotics Competition, Tübitak Proje Yarışması ve NASA SpaceApps gibi çeşitli ulusal ve uluslarası yarışmalarda edindiği tecrübelerle mekanik tasarım, robotik, programlama, bilgisayar destekli çizim ve animasyon işleriyle yakından ilgilenmektedir. Koç Üniversitesi Robotik Topluluğunda yeni projelerde yer almakta, bu sene katılacakları Tübitak UAVTurkey - Uluslararası İnsansız Hava Araçları yarışması için takım kaptanlığı görevini yürütmektedir. </p>
-          </div>
-        </div>
-
-        <div id="popup11" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>UĞUR CAN HEKİM</h2>
-            <p>İzmir Cihat Kora Anadolu Lisesi mezunu olan Uğur, tahsilini Galatasaray Üniversitesi Hukuk Fakültesi 3. Sınıf öğrencisi olarak sürdürmektedir. Mesleki kariyerini diplomasi alanında sürdürmeyi hedeflemekte, çeşitli uluslararası hukuk ve diplomasi dergilerinde yazıları yayınlanmaktadır.  "Hukukçudan girişimci mi olurmuş?" algısına kapılmamış; Yedi70, YBL 21 ve 1Genç 1Gelecek gibi birçok projeye dahil olmuştur. 6 yaşından beri müzikle ilgilenen Uğur ülke çapında çeşitli yarışmalara katılmış, şarkılar bestelemiştir. Galatasaray Üniversitesi Briç Kulübünün kurucu üyeliğini sürdürmektedir.  </p>
-          </div>
-        </div>
-
-        <div id="popup12" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>EMEL YALÇIN</h2>
-            <p>Öğrenimini Yıldız Teknik Üniversitesi İktisat bölümünde sürdüren Fatma Emel Yalçın, üniversite hayatı boyunca ekonomiden tiyatroya kadar pek çok alana ilgi duymuş, sivil toplum kuruluşlarının gönüllülük esaslı projelerinde aktif görev almıştır. Girişimcilikle ilgilenmekte özellikle sosyal girişimcilik ve finansal risk yönetimi konularında akran eğitimleri vermektedir. Ülkelerin gelişmesindeki lokomotif gücün eğitim olduğuna inanmakta bu sebeple eğitim modelleri ve eğitim teknolojileri konularında araştırmalar yapmakta, tiyatro ve edebiyat konularıyla da ilgilenmektedir. </p>
-          </div>
-        </div>
-
-        <div id="popup13" class="modalbg">
-          <div class="dialog">
-            <a href="#close" title="Close" class="close">X</a>
-            <h2>DOĞUKAN ATMACA</h2>
-            <p>Lise eğitimini İSTEK Atanur Oğuz Lisesi’nde tamamladı. Bu dönemde 1., 2. ve 3. İSTEK Gençlik forumlarında Eğitim ve Milli Kimlik Komitelerinde yer aldı. Lisans eğitimini Koç Üniversitesi’nde tarih-arkeoloji ve sanat tarihi üzerine yaptı. Erasmus programıyla gittiği St. Andrews Üniversite’sinde erken dönem Osmanlı tarihi ve Timurlu-Safavî dönemleri İran tarihi üzerine çalıştı. 2012 yılında Koç Üniversitesi ve Hollanda Araştırma Enstitüsü’nün Barçınhöyük kazılarına (Neolitik dönem) katıldı. 2011-2015 yılları arasında Koç Üniversitesi Gönüllüleri’nin bir kolu olan, Koç Eğitim Topluluğu’nda gönüllü olarak felsefe, genel kültür, edebiyat ve tiyatro dersleri verdi. 2014 yılında tarih bölümü temsilcisi olarak Koç Üniversitesi Öğrenci Konseyi’ne seçildi. 2015 yılında Cunda Adası’nda Harvard-Koç Osmanlıca Yaz Okulu’na katıldı. Doğukan, Akdeniz kültürleriyle ilgilenmekte ve bunun yanında, entelektüel tarihe de ilgi duymaktadır. </p>
-          </div>
-        </div>
-
-
-
-        <!-- POPUP -->
-
-        <div class="row">
-
-           <div class="col-sm-1">
-            <div class="person">
-              <div class="person-desc">
-              </div>
-            </div>
-          </div><!--team-col-->
-
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup1"><img src="img/team-m.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Murat Yiğen</h4></center>
-                <!-- <em>Koordinatör</em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> Makina Mühendisliği </br>
-                  <center><a href = "http://twitter.com/muratyigen" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "http://tr.linkedin.com/in/muratyigen" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:murat@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href= "#popup2"><img src="img/team-c.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Cem Öztürk</h4></center>
-                <!-- <em>Mezun</em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> Yönetim Bilişim Sistemleri </br>
-                  <center><a href = "http://twitter.com/thecemozturk" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/in/ozturkcemm" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:cem@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup3"><img src="img/team-z.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Zafer Çavdar</h4></center>
-                <center><p>
-                  Koç Üniversitesi </br> Bilgisayar Mühendisliği </br>
-                  <center><a href = "http://twitter.com/zafercvdr" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/pub/zafer-çavdar/56/917/1a7/en" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:zafer@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a>  | <a href="https://github.com/zafercavdar" target="_blank"><i class="fa fa-github"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup4"><img src="img/team-k.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Cengiz Kaan Aköz</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> Endüstri Mühendisliği </br>
-                  <center>  <!--<a href = "" target="_blank"><i class="fa fa-twitter"></i></a> |--> <a href = "https://tr.linkedin.com/in/kaanakoz" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:kaan@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup5"><img src="img/team-a.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Aysel Kapsız</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> Sosyoloji&Ekonomi </br>
-                  <center>  <!--<a href = "" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "" target="_blank"><i class="fa fa-linkedin"></i></a> |--> <a href="mailto:aysel@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-
-
-          
-
-        </div>
-
-
-        <div class="row">
-
-          <div class="col-sm-1">
-            <div class="person">
-              <div class="person-desc">
-              </div>
-            </div>
-          </div><!--team-col-->
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup6"><img src="img/team-b.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Berkan Lafcı</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br>Elektrik&Elektronik Müh. </br>
-                  <center><a href = "https://twitter.com/BerkanLAFCI" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/pub/berkan-lafci/55/8a6/6b3/en" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:berkan@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup7"><img src="img/team-ra.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Rana Demir</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> İnşaat Mühendisliği </br>
-                  <center><a href = "http://twitter.com/RanaDemir" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/in/ranademir" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:rana@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup8"><img src="img/team-me.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Melis Bora</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br>Psikolojik Danış.&Rehberlik</br>
-                  <center><a href = "http://twitter.com/melissbora" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/pub/melis-bora/a1/25a/165/en" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:melis@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup9"><img src="img/team-r.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Rengim Çetingöz</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Boğaziçi Üniversitesi </br> Kimya Mühendisliği </br>
-                  <center><a href = "https://twitter.com/RengimCetingoz" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://tr.linkedin.com/pub/adil-rengim-çetingöz/104/667/97/en" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:rengim@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup10"><img src="img/eren.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Eren Limon</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Koç Üniversitesi </br> Bilgisayar Mühendisliği </br>
-                   <center><a href = "https://twitter.com/eren_limon" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://www.linkedin.com/in/eren-limon-3a9b7b106" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:eren@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a>  | <a href="https://github.com/limoneren" target="_blank"><i class="fa fa-github"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-
-
-  </div> <!-- end of row-->
-      <div class="row">
-
-          <div class="col-sm-1">
-            <div class="person">
-              <div class="person-desc">
-              </div>
-            </div>
-          </div><!--team-col-->
-
-          <div class="col-sm-2">
-            <div class="person">
-              <div class="person-desc">
-              </div>
-            </div>
-          </div><!--team-col-->
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup11"><img src="img/ugurcan.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Uğur Can Hekim</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Galatasaray Üniversitesi </br> Hukuk </br>
-                  <center><a href = "https://www.twitter.com/ugurcanhekim" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://www.linkedin.com/in/u%C4%9Fur-can-hekim-36a45799" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:ugurcan@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup12"><img src="img/emel.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Emel Yalçın</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Yıldız Teknik Üniversitesi </br> İktisat </br>
-                  <center><a href = "https://twitter.com/femelyalcin" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://www.linkedin.com/in/fatma-emel-yal%C3%A7%C4%B1n-307724107?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin"></i></a> | <a href="mailto:emel@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-
-          <div class="col-sm-2">
-            <div class="person">
-              <a href = "#popup13"><img src="img/dogukan.jpg" class="img-responsive" alt=""></a>
-              <div class="person-desc">
-                <center><h4>Doğukan Atmaca</h4></center>
-                <!-- <em>Öğrenci </em> -->
-                <center><p>
-                  Koç Üniversitesi </br>Arkeoloji ve Sanat Tarihi</br>
-                  <center><a href = "https://twitter.com/DogukanAtmaca2" target="_blank"><i class="fa fa-twitter"></i></a> | <a href = "https://www.facebook.com/doatmaca" target="_blank"><i class="fa fa-facebook"></i></a> | <a href="mailto:dogukan@1genc1gelecek.com" target="_top"><i class="fa fa-envelope"></i></a></center>
-                </p></center>
-              </div>
-            </div>
-          </div><!--team-col-->
-          
-        </div><!--.container-->
-      </div>
-    </section><!--#work-section-->
-    <!--our work section end-->  
-    <section id="contact" class="padding-80">
-      <div class="contact-sec-1">
-        <div class="container">
-          <div class="section-heading text-center">
-            <h4 class="small section-title"><span> Her türlü yorum ve geribildirim için </span></h4>
-            <h2 class="large section-title">BİZE ULAŞIN</h2>
-          </div><!--section heading-->
-        </div><!--.container-->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9">
-            <h4>İletişime Geçin</h4>
-              <form name="sentMessage" id="contactForm" method="post" action="mail/contact_me.php">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="row control-group">
-                      <div class="form-group col-xs-12 controls">
-                        <label>İsim<span>*</span></label>
-                        <input type="text" class="form-control" placeholder="İsim Soyisim" name= "name" id="name" required data-validation-required-message="Lütfen isminizi giriniz.">
-                          <p class="help-block"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="row control-group">
-                      <div class="form-group col-xs-12 controls">
-                        <label>E-posta Adresi<span>*</span></label>
-                        <input type="email" class="form-control" placeholder="E-posta Adresi" name= "email" id="email" required data-validation-required-message="Lütfen geçerli bir e-posta adresi giriniz.">
-                        <p class="help-block"></p>
-                      </div>
-                    </div> 
-                  </div>
-                </div>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 controls">
-                    <label>Konu<span>*</span></label>
-                    <input type="text" class="form-control" placeholder="Mesaj Konunuz" name="subject" id="subject" required data-validation-required-message="Lütfen mesajınız için bir konu belirtiniz.">
-                      <p class="help-block"></p>
-                  </div>
-                </div>
-                <div class="row control-group">
-                  <div class="form-group col-xs-12 controls">
-                    <label>Mesaj<span>*</span></label>
-                    <textarea rows="5" class="form-control" placeholder="Mesaj" name="message" id="message" required data-validation-required-message="Yorumlarınız?."></textarea>
-                    <p class="help-block"></p>
-                  </div>
-                </div>
-                <br>
-                <div id="success"></div>
-                <div class="row">
-                  <div class="form-group col-xs-12">
-                    <button type="submit" class="btn btn-theme-color btn-lg">Gönder</button>
-                  </div>
-                </div>
-              </form>
-              <!--contact form-->
-            </div>
-          </div>
-        </div>
-      </div><!--Contact-sec-1 end-->
-    </section>
-    <section id="footer" class="padding-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 copyright">
-            <span>&copy;2016 | 1Genç 1Gelecek</span>
-          </div>
-        </div>
-      </div>
-    </section><!--footer end-->
-    <!--back to top-->
-    <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
-      <!--back to top end-->
-
-      <!--script files-->
-      <script src="js/jquery.min.js" type="text/javascript"></script>
-      <script src="js/moderniz.min.js" type="text/javascript"></script>
-      <script src="js/jquery-migrate.min.js" type="text/javascript"></script> 
-      <script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
-      <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-      <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-      <script src="js/wow.min.js" type="text/javascript"></script>
-      <script src="js/jquery.sticky.js" type="text/javascript"></script>        
-      <script src="js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
-      <script src="js/jquery.stellar.min.js" type="text/javascript"></script>
-      <script src="js/owl.carousel.min.js" type="text/javascript"></script>
-      <script src="js/jquery.mb.YTPlayer.min.js" type="text/javascript"></script>
-      <script src="js/waypoints.min.js"></script>
-      <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-      <!--image loads plugin -->
-      <script src="js/jquery.imagesloaded.min.js" type="text/javascript"></script>
-      <script src="js/jquery.counterup.min.js" type="text/javascript"></script>
-      <script src="js/jquery.countdown.js" type="text/javascript"></script>
-      <script src="js/contact_me.js" type="text/javascript"></script>
-      <script src="js/jqBootstrapValidation.js" type="text/javascript"></script>
-      <script src="js/custom.js" type="text/javascript"></script>
-      <!--revolution slider plugins-->
-      <script src="rs-plugin/js/jquery.themepunch.tools.min.js" type="text/javascript"></script>
-      <script src="rs-plugin/js/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
-      <script src="js/revolution-custom.js" type="text/javascript"></script>
-      <script src="js/isotope-custom.js" type="text/javascript"></script>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
-  </body>
 </html>
