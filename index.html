@@ -194,10 +194,28 @@
     }
 
     </style>
-  </head>
+
+<!--<SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
+<!--
+var onloadpopupWindow=null;
+function onloadpopup(mypage,myname,w,h,pos,infocus){
+
+if (pos == 'random')
+{LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+else
+{LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+settings='width='+ w + ',height='+ h + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';onloadpopupWindow=window.open('',myname,settings);
+if(infocus=='front'){onloadpopupWindow.focus();onloadpopupWindow.location=mypage;}
+if(infocus=='back'){onloadpopupWindow.blur();onloadpopupWindow.location=mypage;onloadpopupWindow.blur();}
+
+}
+onLoad="onloadpopup('http://birgencbirgelecek.com/duyuru.html','duyuru','800','600','center','front');"
+</script> -->
+
+</head>
 
 
-  <body data-spy="scroll" data-target="#navigation" data-offset="80">
+  <body data-spy="scroll" data-target="#navigation" data-offset="80" onLoad="#duyuru">
     <div class="fullwidthbanner" id="home">
       <div class="ken-burns-banner">
         <ul>    <!-- SLIDE  -->
@@ -267,10 +285,10 @@
             <li><a href="#home">Ana Sayfa</a></li>
             <li><a href="#about">BİZ KİMİZ</a></li>
             <li><a href="#services">DEĞERLERİMİZ</a></li>
-            <li><a href="#akildostum">ProjeLERİMİZ</a></li>
+            <li><a href="#akildostum">PROJELERİMİZ</a></li>
             <li><a href="#bizitani">BİZİ TANI</a></li>
             <li><a href="#contact">İLETİŞİM</a></li>
-            <li><a href="http://blog.1genc1gelecek.com"> | BLOG (Yakında) </a></li>                       
+            <li><a href="http://birgencbirgelecek.com/duyuru.html"> | DUYURULAR </a></li>                       
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container -->
@@ -580,6 +598,16 @@
 
 
         <!-- POPUP -->
+
+         <div id="duyuru" class="modalbg">
+          <div class="dialog">
+            <a href="#close" title="Kapat" class="close">X</a>
+            <h2>Duyuru</h2>
+            <p>Akıl Dostum Projesi mentor veya mentee başvuruları için tıklayın! <br> Son başvuru tarihi: 15 Haziran </p>
+          </div>
+        </div>
+
+
         <div id="popup1" class="modalbg">
           <div class="dialog">
             <a href="#close" title="Close" class="close">X</a>
